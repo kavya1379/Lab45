@@ -1,4 +1,4 @@
-from addition import add
+from addition import sum number
 def test_add_positive_numbers():
     assert add(2, 3) ==5
 
