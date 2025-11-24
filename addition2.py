@@ -3,7 +3,14 @@ import sys
 def add(a, b):
     return a + b
 
-if _name_ == "_main_":
-    x = int(sys.argv[1])   # Convert first argument to integer
-    y = int(sys.argv[2])   # Convert second argument to integer
-    print("sum:",add(x,y))
+if __name__ == "__main__":
+    # Check if two arguments are given
+    if len(sys.argv) != 3:
+        print("Usage: python program.py <num1> <num2>")
+        sys.exit(1)
+
+    # Read arguments (they come as strings)
+    x = int(sys.argv[1])
+    y = int(sys.argv[2])
+
+    print("Sum:", add(x
