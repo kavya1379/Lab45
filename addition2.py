@@ -1,11 +1,9 @@
 import sys
-if (sys.argv) == 2:
-  x=int(sys.argv[1])
-  y=int(sys.argv[2])
-else:  
+
 def add(a, b):
-    return a+b
-if __name__ == "__main__":
-    x=10
-    y=20
-    print("Sum:",add(x, y))
+    return a + b
+
+if _name_ == "_main_":
+    x = int(sys.argv[1])   # Convert first argument to integer
+    y = int(sys.argv[2])   # Convert second argument to integer
+    print("sum:", add(x, y))
